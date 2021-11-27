@@ -22,6 +22,9 @@ $(call inherit-product, vendor/xiaomi/sm6150-common/sm6150-common-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+    
+# GoogleCamera
+$(call inherit-product, vendor/GoogleCamera/gcam-vendor.mk)
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
