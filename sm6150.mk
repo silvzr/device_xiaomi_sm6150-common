@@ -233,6 +233,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
+    AOSPAXiaomiSM6150Frameworks \
     AOSPAXiaomiSM6150SystemUI \
     WifiResTarget \
     XiaomiSM6150Frameworks
