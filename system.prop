@@ -20,6 +20,9 @@ persist.vendor.cne.feature=1
 # Netflix custom property
 ro.netflix.bsp_rev=Q6150-17263-1
 
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
+
 # ParanoidDoze
 ro.sensor.pickup=xiaomi.sensor.pickup
 ro.sensor.proximity=true
