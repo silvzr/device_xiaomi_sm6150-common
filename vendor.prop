@@ -111,8 +111,6 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
 # Display
-debug.egl.hw=0
-debug.mdpcomp.logs=0
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.late.sf.duration=10500000
 debug.sf.late.app.duration=20500000
@@ -125,12 +123,6 @@ debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
 ro.surface_flinger.protected_contents=true
 vendor.display.disable_excl_rect_partial_fb=1
-vendor.display.qdcm.mode_combine=1
-
-# Display - Set color mode to Adaptive by default
-persist.sys.sf.color_saturation=1.0
-persist.sys.sf.native_mode=2
-persist.sys.sf.color_mode=9
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
