@@ -248,11 +248,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pa
-
-PRODUCT_ENFORCE_RRO_TARGETS += *
+PRODUCT_PACKAGES += \
+    AOSPAXiaomiSM6150SystemUI \
+    WifiResTarget \
+    XiaomiSM6150Frameworks
 
 # ParanoidDoze
 PRODUCT_PACKAGES += \
@@ -367,7 +366,6 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
     libwpa_client \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
