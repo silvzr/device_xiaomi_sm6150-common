@@ -106,7 +106,6 @@ endif
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 # Media
-TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
 
 # Power
@@ -120,9 +119,6 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 
-# RIL
-ENABLE_VENDOR_RIL_SERVICE := true
-
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_xiaomi
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
@@ -130,7 +126,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
-
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Verified Boot
