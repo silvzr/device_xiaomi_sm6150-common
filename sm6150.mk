@@ -238,7 +238,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     usb \
     vibrator \
     wfd \
-    wlan
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -297,6 +296,13 @@ PRODUCT_PACKAGES += \
     libvulkan
 
 # WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
+    hostapd \
+    libwpa_client \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
