@@ -559,9 +559,6 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
-# WLAN
-vendor/bin/cnss-daemon
-
 # WiFi Display
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
@@ -597,6 +594,9 @@ vendor/lib/libwfduibcsrc_proprietary.so
 vendor/lib/libwfdutils_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# WLAN - from sweet V13.0.8.0.SKFEUXM
+vendor/bin/cnss-daemon|a9766c890f7a87dfe11c1db676378b96e765b225
 
 # Xiaomi MAC
 vendor/bin/nv_mac
